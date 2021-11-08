@@ -72,7 +72,9 @@ executable cardano-launcher
   main-is: Main.hs
   hs-source-dirs:
       app
-  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  ghc-options: -threaded
+               -rtsopts
+               -with-rtsopts="-I0 -N"
   build-depends:
       base >=4.7 && <5
     , cardano-prelude
