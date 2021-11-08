@@ -74,7 +74,9 @@ executable cardano-launcher
       app
   ghc-options: -threaded
                -rtsopts
-               -with-rtsopts="-I0 -N"
+               "-with-rtsopts=-I0"
+               "-with-rtsopts=-N"
+               "-with-rtsopts=-A16m"
   build-depends:
       base >=4.7 && <5
     , cardano-prelude
